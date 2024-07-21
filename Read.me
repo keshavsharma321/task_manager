@@ -1,0 +1,53 @@
+# Task Management App
+
+This is a basic task management application built with FastAPI for the backend and React for the frontend.
+
+## Features
+
+- Create, read, update, and delete tasks
+- Tasks have a title, description, status, and created date
+- Real-time updates on the frontend without page reloads
+
+## Setup Instructions
+
+### Backend Setup (FastAPI + SQLAlchemy)
+
+#### Prerequisites
+
+- Python 3.8+
+- Virtual environment manager (optional but recommended)
+
+#### Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/task-manager-app.git
+   cd task-manager-app/backend
+
+
+    Create and activate a virtual environment (optional but recommended):
+
+    bash
+
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+Install dependencies:
+
+bash
+
+pip install -r requirements.txt
+
+Run database migrations:
+
+bash
+
+alembic upgrade head
+
+Start the FastAPI server:
+
+bash
+
+uvicorn app.main:app --reload
+
+The server will start at http://127.0.0.1:8000.
